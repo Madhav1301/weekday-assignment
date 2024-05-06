@@ -35,10 +35,9 @@ export default function Filters() {
         return (
           <Autocomplete
             multiple
-            sx={{px: '5px', borderRadius: '10px'}}
+            sx={{px: '5px', borderRadius: '10px', width: window.innerWidth / 6}}
             id={id}
             options={DATA[key]}
-            sx={{ width: window.innerWidth / 6 }}
             renderInput={(params) => <TextField {...params} label={key} />}
             onChange={(event, value) => {
               props.setFilter((prevState) => ({
