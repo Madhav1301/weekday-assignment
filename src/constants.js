@@ -45,3 +45,5 @@ export const ROLES = [
       "70L",
     ],
   };
+
+  export const PAGE_SIZE = 10;
